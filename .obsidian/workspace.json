@@ -34,21 +34,9 @@
               "icon": "lucide-file",
               "title": "An information-theoretic model for steganography"
             }
-          },
-          {
-            "id": "3126268d62798fc8",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "隐写检测/An information-theoretic model for steganography/An_information-theoretic_model_for_steganography_(2003_IH)(1).pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "An_information-theoretic_model_for_steganography_(2003_IH)(1)"
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -206,15 +194,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3126268d62798fc8",
+  "active": "74f0fd60f660a89d",
   "lastOpenFiles": [
-    "隐写检测/An information-theoretic model for steganography/An information-theoretic model for steganography.md",
+    "隐写检测/An information-theoretic model for steganography/Sub/安全的隐写系统.md",
+    "隐写检测/VAE-Stega Linguistic Steganography Based on Variational Auto-Encoder",
+    "隐写检测/An information-theoretic model for steganography/Sub/模型.md",
     "隐写检测/An information-theoretic model for steganography/An_information-theoretic_model_for_steganography_(2003_IH)(1).pdf",
+    "隐写检测/An information-theoretic model for steganography/An information-theoretic model for steganography.md",
     "隐写检测/An information-theoretic model for steganography/Sub/结论.md",
     "隐写检测/An information-theoretic model for steganography/Sub/讨论.md",
     "隐写检测/An information-theoretic model for steganography/Sub/通用隐写系统.md",
-    "隐写检测/An information-theoretic model for steganography/Sub/模型.md",
-    "隐写检测/An information-theoretic model for steganography/Sub/安全的隐写系统.md",
     "隐写检测/An information-theoretic model for steganography/Sub/检测性能.md",
     "隐写检测/An information-theoretic model for steganography/Sub/引言.md",
     "隐写检测/An information-theoretic model for steganography/Img/Pasted image 20250520185401.png",
