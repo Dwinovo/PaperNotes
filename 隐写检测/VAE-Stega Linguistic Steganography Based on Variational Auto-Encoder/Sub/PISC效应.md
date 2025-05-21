@@ -327,7 +327,7 @@
 > 随着嵌入率的增加，生成的隐写载体的质量和抗隐写分析能力的不同趋势代表了这些生成隐写载体的两个不同方面，我们将其命名为**感知不可察觉性（perceptual-imperceptibility）**和**统计不可察觉性（statistical-imperceptibility）**，如图4所示。
 📌 **分析：**
 * 总结了 Psic Effect 现象，并正式引入了两个核心概念：**感知不可察觉性**（与质量相关）和**统计不可察觉性**（与抗隐写分析能力相关）。图4应是这两个概念的示意图。
-
+![[Pasted image 20250521144452.png]]
 ---
 
 > Perceptual-imperceptibility measures the quality of the generated steganographic carriers, while statistical-imperceptibility measures the statistical inseparability between the generated steganographic carriers and normal carriers.
