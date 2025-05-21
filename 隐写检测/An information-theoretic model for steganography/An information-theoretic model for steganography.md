@@ -1,6 +1,6 @@
 ## [[隐写检测/An information-theoretic model for steganography/Sub/IMRD结构解析|IMRD结构解析]]
 ## [[隐写检测/An information-theoretic model for steganography/Sub/摘要]]
-## [[引言]]
+## [[隐写检测/An information-theoretic model for steganography/Sub/引言]]
 ## [[模型]]
 
 ## [[检测性能]]
