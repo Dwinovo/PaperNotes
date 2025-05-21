@@ -142,7 +142,7 @@
 > 根据图2，我们可以得出以下结论。
 📌 **分析：**
 * 引导读者对图2进行分析和总结。
-
+![[Pasted image 20250521143339.png]]
 ---
 
 > Firstly, with the increase of the embedding rate, the trend of perplexity and the human score of the generated steganographic sentences is consistent, they both indicate that the quality of the generated steganographic sentences are getting worse.
