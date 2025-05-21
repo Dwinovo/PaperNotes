@@ -574,3 +574,310 @@
 > 然后我们使用解码器在 $z$ 的约束下生成句子，从而使生成句子的特征分布符合正常句子的特征分布。
 📌 **分析：**
 * 总结了编码器部分如何与解码器连接：采样到的潜在向量 $z$ 将作为解码器生成文本的起始条件或约束，以确保生成文本的整体统计特性与正常文本的潜在分布一致。
+
+> C. Decoder in VAE-Stega
+> C. **VAE-Stega 中的解码器**
+📌 **分析：**
+* 本小节将详细介绍 VAE-Stega 模型中解码器的具体实现，以及它如何与编码器和信息隐藏机制协同工作。
+
+---
+
+> For a sentence x with length n, which can be represented as $x = \{x_1, x_2, . . . , x_n\}$, $x_i ∈ D$. The task of decoder is to find a suitable word sequence with complete semantics and correct syntax among $N^n$ possible combinations according to the latent vector z sampled from the latent space Z.
+> 对于一个长度为 $n$ 的句子 $x$，它可以表示为 $x = \{x_1, x_2, . . . , x_n\}$，其中 $x_i \in D$。解码器的任务是根据从潜在空间 $Z$ 中采样的潜在向量 $z$，在 $N^n$ 种可能的组合中找到一个具有完整语义和正确语法的合适词序列。
+📌 **分析：**
+* 明确了解码器的核心任务：从一个巨大的可能性空间中，根据潜在向量 $z$ 的指导，生成一个既符合语义又符合语法的自然语言句子。这体现了生成式模型“创造”新内容的能力。
+
+---
+
+> Referring to the model proposed in [13], [47], in this work, we use Recurrent Neural Network (RNN) as decoder for steganographic sentences generation.
+> 参考 [13]、[47] 中提出的模型，在这项工作中，我们使用**循环神经网络（Recurrent Neural Network, RNN）**作为隐写语句生成的解码器。
+📌 **分析：**
+* **“循环神经网络（RNN）”**：一种适合处理序列数据的神经网络，通过在时间步之间共享参数和传递隐藏状态来捕捉序列中的依赖关系。RNN，特别是其变体（如LSTM、GRU），在语言建模和文本生成中表现出色。
+* 选择 RNN 作为解码器是常见的做法，因为它能够学习序列的上下文依赖性。
+
+---
+
+> We use LSTM unit as the nonlinear transformation function of the hidden layer in recurrent neural network, which can be described using the following formulas: { $I_t = σ (W_i · [h_{t−1}, x_t ] + b_i )$, $F_t = σ (W_f · [h_{t−1}, x_t ] + b_f )$, $C_t = F_t · C_{t−1} + I_t · tanh(W_c · [h_{t−1}, x_t ] + b_c)$, $O_t = σ (W_o · [h_{t−1}, x_t ] + b_o)$, $h_t = O_t · tanh(C_t )$. (21)
+> 我们使用 **LSTM 单元（LSTM unit）**作为循环神经网络隐藏层的非线性变换函数，这可以用以下公式描述：
+> $$\begin{cases} I_t = \sigma (W_i \cdot [h_{t−1}, x_t ] + b_i ), \\ F_t = \sigma (W_f \cdot [h_{t−1}, x_t ] + b_f ), \\ C_t = F_t \cdot C_{t−1} + I_t \cdot \tanh(W_c \cdot [h_{t−1}, x_t ] + b_c), \\ O_t = \sigma (W_o \cdot [h_{t−1}, x_t ] + b_o), \\ h_t = O_t \cdot \tanh(C_t ). \end{cases} \quad \text{(21)}$$
+📌 **分析：**
+* **“LSTM 单元”**：长短期记忆网络 (Long Short-Term Memory) 是一种特殊的 RNN 单元，旨在解决传统 RNN 在处理长序列时可能出现的梯度消失或梯度爆炸问题，从而更好地捕捉长距离依赖。
+* **门控机制**：公式 (21) 详细展示了 LSTM 的内部结构，包括：
+    * **输入门 ($I_t$)**：控制有多少新的输入信息可以更新记忆单元。
+    * **遗忘门 ($F_t$)**：控制有多少过去的记忆信息应该被遗忘。
+    * **记忆单元 ($C_t$)**：存储长期信息，它通过遗忘门和输入门的协同作用来更新。
+    * **输出门 ($O_t$)**：控制有多少记忆单元的信息可以输出到隐藏状态。
+    * **隐藏状态 ($h_t$)**：当前时间步的输出。
+* **$\sigma$ (sigmoid 函数)**：将值压缩到0到1之间，作为门的激活函数。
+* **tanh (双曲正切函数)**：将值压缩到-1到1之间，用于转换输入。
+* 通过这些门，LSTM 能够选择性地记住或遗忘信息，使其在处理文本序列时具有更强的记忆能力。
+
+---
+
+> where $I_t , F_t , O_t$ indicate the input gate, the forget gate and the output gate, separately. $W_i , W_f , W_c, W_o$ are the weights in them and $b_i , b_f , b_c, b_o$ are the bias. $h_t$ stands for the hidden state at time step t. The memory cell $C_t$ is a summation of the incoming information modulated by the input gate and previous memory modulated by the forget gate $F_t$. For simplicity, we denote the transfer function of LSTM units by $f_{LSTM}(∗)$.
+> 其中 $I_t , F_t , O_t$ 分别表示输入门、遗忘门和输出门。$W_i , W_f , W_c, W_o$ 是它们的权重，$b_i , b_f , b_c, b_o$ 是偏置。$h_t$ 代表时间步 $t$ 的隐藏状态。记忆单元 $C_t$ 是由输入门调节的传入信息和由遗忘门 $F_t$ 调节的先前记忆的总和。为了简化，我们将 LSTM 单元的传递函数表示为 $f_{LSTM}(∗)$。
+📌 **分析：**
+* 对公式 (21) 中各个符号的详细解释，并引入了 $f_{LSTM}(∗)$ 作为 LSTM 单元的抽象表示。
+
+---
+
+> RNN can learn the statistical language model from a large number of normal texts, and then calculate the conditional probability distribution of the next word according to the previous generated words, and finally it can generate sentences that conform to such statistical language model.
+> RNN 可以从大量正常文本中学习统计语言模型，然后根据前面生成的词计算下一个词的条件概率分布，最后生成符合该统计语言模型的句子。
+📌 **分析：**
+* 总结了 RNN（在此处特指使用 LSTM 单元的 RNN）作为解码器在语言生成方面的能力：学习语言模型，预测下一个词，并生成文本。
+
+---
+
+> Therefore, we can use a large number of normal texts to train the proposed model, let it learn the statistical language model and conditional probability distribution characteristics of normal texts.
+> 因此，我们可以使用大量正常文本来训练所提出的模型，让它学习正常文本的统计语言模型和条件概率分布特征。
+📌 **分析：**
+* 强调了训练数据的重要性：通过大量正常文本的训练，模型能够捕获到自然语言的内在规律。
+
+---
+
+> After the training, when we use the trained model to generate sentences, we refer to Bowman et al. [47] and use the random sampled latent vector z as the initial state of RNN, then iteratively generate the following words.
+> 训练完成后，当我们使用训练好的模型生成句子时，我们参考 Bowman 等人 [47] 的方法，使用随机采样的潜在向量 $z$ 作为 RNN 的初始状态，然后迭代生成后续词语。
+📌 **分析：**
+* **生成过程的关键**：
+    * **“随机采样的潜在向量 $z$ 作为 RNN 的初始状态”**：这是 VAE 解码器与传统 RNN 生成器结合的核心点。编码器将正常文本映射到潜在空间，解码器则从潜在空间采样 $z$ 来生成。这个 $z$ 作为整个句子生成过程的全局信息，指导解码器生成具有特定风格或主题的句子，并确保其整体分布与正常文本相似。
+    * **“迭代生成后续词语”**：标准的序列生成过程。
+
+---
+
+> For example, suppose currently we have alread generate i − 1 words and the model are going to generate the i -th word. The model first calculates the semantic information of all the previously generated $i −1$ words and stores in the hidden layer of the decoder, that is: $c_{i−1} = f_{L ST M} (x_1, x_2, . . . , x_{t−1}, z)$ (22)
+> 例如，假设当前我们已经生成了 $i - 1$ 个词，模型将要生成第 $i$ 个词。模型首先计算所有先前生成的 $i-1$ 个词的语义信息，并存储在解码器的隐藏层中，即：
+> $$c_{i−1} = f_{LSTM} (x_1, x_2, . . . , x_{i−1}, z) \quad \text{(22)}$$
+📌 **分析：**
+* **$c_{i-1}$**：代表解码器在生成第 $i$ 个词之前，结合了已生成的 $i-1$ 个词的上下文信息和来自 VAE 潜在空间 $z$ 的全局信息后，得到的隐藏状态或上下文向量。
+* **$x_1, x_2, . . . , x_{i-1}$**：已生成的词序列。
+* **$z$**：从潜在空间采样的向量，作为全局约束或“主题/风格”向量。
+* 公式 (22) 描述了 LSTM 如何在每个时间步更新其内部状态，以捕捉上下文信息和潜在向量的影响。
+
+---
+
+> where $c_{i−1}$ represents the output vector of LSTM, which contains the semantic information of all the words generated previously.
+> 其中 $c_{i−1}$ 代表 LSTM 的输出向量，它包含所有先前生成的词的语义信息。
+📌 **分析：**
+* 进一步解释了 $c_{i-1}$ 的作用。
+
+---
+
+> Based on these information, after all the hidden layers, we can calculate the probability distribution of the i -th word.
+> 基于这些信息，经过所有隐藏层之后，我们可以计算第 $i$ 个词的概率分布。
+📌 **分析：**
+* 指出了从隐藏状态到词概率分布的下一步。
+
+---
+
+> To be more specific, we define the Prediction Weight (PW) as matrix $W_P ∈ R^{r×N}$, that is $W_P = \begin{bmatrix} w^p_{1,1} & w^p_{1,2} & \cdots & w^p_{1,N} \\ w^p_{2,1} & w^p_{2,2} & \cdots & w^p_{2,N} \\ \vdots & \vdots & \ddots & \vdots \\ w^p_{r,1} & w^p_{r,2} & \cdots & w^p_{r,N} \end{bmatrix}$ (23)
+> 更具体地说，我们定义**预测权重（Prediction Weight, PW）**为矩阵 $W_P \in \mathbb{R}^{r \times N}$，即：
+> $$W_P = \begin{bmatrix} w^p_{1,1} & w^p_{1,2} & \cdots & w^p_{1,N} \\ w^p_{2,1} & w^p_{2,2} & \cdots & w^p_{2,N} \\ \vdots & \vdots & \ddots & \vdots \\ w^p_{r,1} & w^p_{r,2} & \cdots & w^p_{r,N} \end{bmatrix} \quad \text{(23)}$$
+📌 **分析：**
+* **“预测权重 (PW)”**：这是一个可学习的矩阵，用于将 LSTM 隐藏层的输出（维度为 $r$）映射到词典大小 $N$ 的空间，从而为词典中的每个词生成一个分数。
+* **$r$**：LSTM 最后一层隐藏层的单元数。
+* **$N$**：词典的大小。
+
+---
+
+> where r indicates the number of LSTM units in the last hidden layer of decoder.
+> 其中 $r$ 表示解码器最后一层隐藏层中 LSTM 单元的数量。
+📌 **分析：**
+* 对公式 (23) 中 $r$ 的解释。
+
+---
+
+> Then we use this learned matrix $W_P$ to calculate the score for each word in the dictionary D, that is $y_i = \sum_{k=1}^r w^p_{k,i} \cdot o^l_{i,t} + b^p_{i,t} , (24)$
+> 然后我们使用这个学习到的矩阵 $W_P$ 来计算字典 $D$ 中每个词的分数，即：
+> $$y_i = \sum_{k=1}^r w^p_{k,i} \cdot o^l_{i,t} + b^p_{i,t} \quad \text{(24)}$$
+📌 **分析：**
+* **$y_i$**：字典中第 $i$ 个词的分数（logits），在经过 Softmax 之前。
+* **$o^l_{i,t}$**：LSTM 最后一层隐藏层在时间步 $t$ 的输出。
+* **$w^p_{k,i}$**：预测权重矩阵 $W_P$ 中的元素。
+* **$b^p_{i,t}$**：偏置项。
+* 公式 (24) 描述了如何将 LSTM 的隐藏状态通过线性变换（乘以预测权重矩阵并加上偏置）映射到词典中每个词的未归一化分数。
+
+---
+
+> where $W_P$ and $b^p$ are learned weight matrix and bias. The dimension of the output vector y is N, which is the same size of dictionary D.
+> 其中 $W_P$ 和 $b^p$ 是学习到的权重矩阵和偏置。输出向量 $y$ 的维度为 $N$，与字典 $D$ 的大小相同。
+📌 **分析：**
+* 对公式 (24) 中符号的进一步解释。
+
+---
+
+> In order to calculate the probability of next word at each step, we add a softmax classifier to the output layer to calculate the conditional probability of each word in dictionart D: $p(d_j | x_1, x_2, . . . , x_{t−1}, z) = \frac{exp(y_i )}{\sum_{j=1}^N exp(y_j )} , d_j ∈ D. (25)$
+> 为了在每一步计算下一个词的概率，我们在输出层添加一个 **softmax 分类器（softmax classifier）**来计算字典 $D$ 中每个词的条件概率：
+> $$p(d_j | x_1, x_2, . . . , x_{t−1}, z) = \frac{\exp(y_i )}{\sum_{j=1}^N \exp(y_j )} , d_j \in D. \quad \text{(25)}$$
+📌 **分析：**
+* **“softmax 分类器”**：将一组任意实数值（$y_i$，即 logits）转换为一个概率分布，其中所有概率的总和为1。
+* **$p(d_j | \dots)$**：表示给定前面词的上下文信息和潜在向量 $z$ 时，下一个词是 $d_j$ 的条件概率。
+* 公式 (25) 描述了如何从每个词的分数 $y_i$ 得到其在当前时间步的条件概率。
+
+---
+
+> For the task of automatic text generation, we only need to iteratively select the words with the highest conditional probability in the dictionary each time as the output, so that we can generate sentence with high quality.
+> 对于自动文本生成任务，我们只需在每次迭代中选择字典中具有最高条件概率的词作为输出，这样我们就可以生成高质量的句子。
+📌 **分析：**
+* **普通文本生成**：解释了在没有信息隐藏需求时，如何生成高质量文本（贪婪地选择最高概率的词）。
+
+---
+
+> In fact, when the training sample size is large enough, there is actually a certain degree of redundancy in the conditional probability distribution space at each time step, so we can achieve secret information hiding by encoding it appropriately.
+> 事实上，当训练样本规模足够大时，每个时间步的条件概率分布空间中实际上存在一定程度的**冗余（redundancy）**，因此我们可以通过适当编码来实现秘密信息隐藏。
+📌 **分析：**
+* **“冗余”**：这是隐写术存在的理论基础。在语言生成中，这意味着除了最高概率的词，还有许多其他概率不为零的词，它们同样能使句子保持自然。隐写术就是利用这些次优选择的空间来嵌入信息。
+
+---
+
+> For VAE-Stega (LSTM-LSTM), it shares the same model structure and the same decoder with VAE-Stega (BERT-LSTM), the only difference is the encoder module.
+> 对于 **VAE-Stega (LSTM-LSTM)**，它与 **VAE-Stega (BERT-LSTM)** 共享相同的模型结构和解码器，唯一的区别在于编码器模块。
+📌 **分析：**
+* 回顾了 VAE-Stega 的两种版本，并指出它们的主要区别在于编码器。
+
+---
+
+> VAE-Stega (LSTM-LSTM) uses a recurrent neural network with LSTM units as encoder.
+> VAE-Stega (LSTM-LSTM) 使用带有 LSTM 单元的循环神经网络作为编码器。
+📌 **分析：**
+* 明确了 VAE-Stega (LSTM-LSTM) 中编码器也使用了 LSTM。
+
+---
+
+> It uses the output of the last hidden layer at the last time step as the feature expression of the input sentence.
+> 它使用最后一个时间步的最后一个隐藏层的输出作为输入语句的特征表达。
+📌 **分析：**
+* 描述了 LSTM 编码器如何生成句子的特征表示：通常取最后一个时间步的最终隐藏状态，因为它被认为是包含了整个序列信息。
+
+---
+
+> Therefore, for VAE-Stega (LSTM-LSTM), we only need to replace Formula (19) with the following form: $z(x) = f^l_{L ST M} (x ), (26)$
+> 因此，对于 VAE-Stega (LSTM-LSTM)，我们只需用以下形式替换公式 (19)：
+> $$z(x) = f^l_{LSTM} (x ), \quad \text{(26)}$$
+📌 **分析：**
+* 公式 (26) 表示 LSTM 作为编码器时，将输入句子 $x$ 映射为其特征表示 $z(x)$，其中 $f^l_{LSTM}$ 指的是 LSTM 模型的第 $l$ 层输出。
+
+---
+
+> where $l$ indicates the number of hidden layers in the encoder of VAE-Stega (LSTM-LSTM).
+> 其中 $l$ 表示 VAE-Stega (LSTM-LSTM) 编码器中隐藏层的数量。
+📌 **分析：**
+* 对公式 (26) 中符号 $l$ 的解释。
+
+---
+
+> After extracting the feature expression of the input sentence, the follow-up operation is completely consistent with VAE-Stega (BERT-LSTM) as described above.
+> 提取输入语句的特征表达后，后续操作与上述 VAE-Stega (BERT-LSTM) 的描述完全一致。
+📌 **分析：**
+* 强调两种 VAE-Stega 版本在编码器之后的流程是相同的，即都将编码器的输出转换为潜在分布的均值和方差，然后采样潜在向量并送入解码器。
+
+---
+
+> D. Information Hiding and Extraction
+> D. **信息隐藏与提取**
+📌 **分析：**
+* 本小节将详细描述如何在 VAE-Stega 框架下具体实现秘密信息的嵌入和提取过程。
+
+---
+
+> As described in the previous part, in the process of automatic text generation, at each step, the decoder will calculate an N-dimensional conditional probability distribution vector, where each dimension represents the probability that the corresponding word in the dictionary D can be selected to be the output as the current step.
+> 如前所述，在自动文本生成过程中，每一步，解码器都会计算一个 $N$ 维的**条件概率分布向量（conditional probability distribution vector）**，其中每个维度代表字典 $D$ 中相应词语被选作当前输出的概率。
+📌 **分析：**
+* 重申了解码器的输出：一个包含词典中所有词的概率的向量。
+
+---
+
+> The higher the probability of words, the more consistent with learned language model, so the better quality the text generated.
+> 词语的概率越高，就越符合学习到的语言模型，因此生成的文本质量越好。
+📌 **分析：**
+* 这是基于语言模型生成文本的基本原则：选择高概率的词有助于保持文本的自然度和流畅性。
+
+---
+
+> When choosing different word as current output, the conditional probability distribution of subsequent words will be different.
+> 当选择不同的词作为当前输出时，后续词语的条件概率分布将不同。
+📌 **分析：**
+* 这是序列生成的基本特性：每个词的选择都会影响后续的上下文和下一个词的概率分布。隐写术正是利用这种动态性来嵌入信息。
+
+---
+
+> At each time step for sentence generation, we first rank the words in the dictionary D in descending order according to their conditional probability, then choose the top m sorted words to build the Candidate Pool (CP).
+> 在句子生成的每个时间步，我们首先根据条件概率将字典 $D$ 中的词按降序排列，然后选择前 $m$ 个词来构建**候选池（Candidate Pool, CP）**。
+📌 **分析：**
+* **“候选池（CP）”**：信息嵌入的关键。不是从整个词典中选择词，而是从一个缩小范围的、概率较高的词集合中选择，以尽可能保持文本质量。
+* **“降序排列”**：确保高概率词优先被考虑。
+
+---
+
+> The process of information embedding is to encode the candidate pool at each moment, and then output corresponding candidate word according to the secret information to be embedded, so that the generated text contains secret information.
+> 信息嵌入的过程是：在每个时刻对候选池进行编码，然后根据要嵌入的秘密信息输出相应的候选词，从而使生成的文本包含秘密信息。
+📌 **分析：**
+* **信息嵌入原理**：通过在候选池中根据秘密比特位来选择词，秘密信息就被编码到生成的文本中。例如，如果候选池有4个词，而秘密比特是“00”，就选择第一个词；如果是“01”，选择第二个词，以此类推。
+
+---
+
+> Generally speaking, the larger the candidate pool is, the more bits can be embedded, but at the same time, it is more likely to select words with lower conditional probability at the current output and thus decrease the quality of generated sentence.
+> 一般来说，候选池越大，可以嵌入的比特数就越多，但同时，当前输出选择条件概率较低词的可能性也越大，从而降低生成语句的质量。
+📌 **分析：**
+* **嵌入率与质量的权衡**：
+    * **大候选池**：提供更多选择，可以嵌入更多信息（高嵌入率）。
+    * **质量下降**：但大候选池也意味着可能选择“不那么自然”的词（概率较低的词），从而影响文本质量。
+* 这体现了隐写术中常见的嵌入率与不可察觉性之间的权衡关系。
+
+---
+
+> In this paper, we refer to previous works and compare two different encoding methods, namely Huffman coding (HC) [13] and arithmetic coding (AC) [17], to illustrate the effectiveness of the proposed VAE-Stega model.
+> 在本文中，我们参考了以往的工作，并比较了两种不同的编码方法，即**霍夫曼编码（Huffman coding, HC）** [13] 和**算术编码（arithmetic coding, AC）** [17]，以说明所提出的 VAE-Stega 模型的有效性。
+📌 **分析：**
+* **“霍夫曼编码（HC）”** [13]：一种变长编码方法，根据符号的频率（在这里是词的条件概率）为高频词分配短编码，为低频词分配长编码。
+* **“算术编码（AC）”** [17]：一种更高级的变长编码方法，它可以将整个消息编码为一个小数，并可以实现接近信息熵的压缩比，通常比霍夫曼编码更灵活，能更好地利用概率分布。
+* 选择这两种编码方法进行比较，以评估 VAE-Stega 模型在不同嵌入策略下的性能。
+
+---
+
+> The process of secret information hiding and extracting is a completely opposite process.
+> 秘密信息隐藏和提取的过程是完全相反的过程。
+📌 **分析：**
+* 隐写术的普遍原则：提取是嵌入的逆操作，需要相同的算法和密钥。
+
+---
+
+> It is worth noting that, compared to previous steganographic text generation algorithms, such as the RNN-Stega model [13], the proposed VAE-Stega model needs to use the same latent vector sampled from the latent space as the sender in the process of decoding each steganographic sentence.
+> 值得注意的是，与以前的隐写文本生成算法（例如 RNN-Stega 模型）相比，所提出的 VAE-Stega 模型在解码每个隐写语句的过程中需要使用与发送方**相同的从潜在空间中采样的潜在向量 $z$**。
+📌 **分析：**
+* **VAE-Stega 的特殊要求**：这是 VAE-Stega 框架下信息提取的关键难点。传统 RNN-Stega 只需要共享语言模型和编码方法，但 VAE-Stega 还要求发送方和接收方在生成（和提取）时使用相同的潜在向量 $z$。
+
+---
+
+> In actual use, since the computer can only generate pseudo-random numbers, the sender and receiver only need to share the random seed generation algorithm to ensure that the sampled latent vectors are synchronized, so as to ensure correct extraction secret information in the received steganographic text.
+> 在实际使用中，由于计算机只能生成**伪随机数（pseudo-random numbers）**，发送方和接收方只需共享**随机种子生成算法（random seed generation algorithm）**，以确保采样的潜在向量同步，从而保证在接收到的隐写文本中正确提取秘密信息。
+📌 **分析：**
+* **解决方案**：利用计算机生成伪随机数的特性。只要发送方和接收方使用相同的随机数生成器（以及相同的随机种子），它们就能生成相同的潜在向量 $z$，从而实现同步。这类似于密码学中共享密钥的原理。
+
+---
+
+> At each time step, Bob inputs each word into the same trained model and gets the conditional probability distribution of next word.
+> 在每个时间步，鲍勃（Bob）将每个词输入到相同的训练模型中，并获得下一个词的条件概率分布。
+📌 **分析：**
+* 提取过程的第一步：接收方（Bob）使用与发送方相同的训练好的模型来预测下一个词的条件概率分布。
+
+---
+
+> He firstly sorts all the words in the dictionary in descending order of probability and selects the top m words to form the Candidate Pool.
+> 他首先根据概率将字典中所有词按降序排列，并选择前 $m$ 个词来形成**候选池（Candidate Pool）**。
+📌 **分析：**
+* 提取过程的第二步：重建候选池，这与嵌入时的步骤相同。
+
+---
+
+> Then he encodes the candidate pool using the same encoding method as the sender, such as Huffman coding [13] or arithmetic coding [17].
+> 然后他使用与发送方相同的编码方法（例如霍夫曼编码 或算术编码）来编码候选池。
+📌 **分析：**
+* 提取过程的第三步：使用相同的编码方法重建编码规则。
+
+---
+
+> Finally, according to the actual transmitted word at the current moment, the reciever can successfully and accurately decode the bits embedded in each word, thus to complete the covert communication.
+> 最后，根据当前实际传输的词，接收方可以成功且准确地解码嵌入在每个词中的比特，从而完成隐蔽通信。
+📌 **分析：**
+* 提取过程的最后一步：通过将接收到的实际词与重建的编码规则进行匹配，反推出嵌入的秘密比特。
+* 总结了整个隐蔽通信的闭环过程。
