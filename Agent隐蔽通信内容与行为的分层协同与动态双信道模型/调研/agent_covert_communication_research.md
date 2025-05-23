@@ -1,7 +1,5 @@
 # Agent隐蔽通信中Prompt压缩与解压缩方法研究综述
-- from skywork
-*当前日期: 2025-05-23*
-
+ ***from skywork***
 ## 一、 引言：Agent隐蔽通信的挑战与Prompt的角色
 
 随着人工智能技术的飞速发展，智能体（Agent）已广泛应用于各类复杂交互场景，从自主系统、多智能体协作到人机交互界面。这些应用在带来便利的同时，也催生了对Agent之间进行隐蔽通信的需求，无论出于良性协作还是潜在的恶意目的，其研究价值日益凸显。然而，现有基于大型语言模型（LLM）的Agent隐蔽通信，特别是依赖内容隐写的方法，面临着一个被称为"静态Prompt"引发的"同步悖论"的核心困境。正如 [《Agent 隐蔽通信 内容与行为的分层协同与动态双信道模型》](https://github.com/precize/OWASP-Agentic-AI/blob/main/agent-covert-channel-exploitation-16.md)（以下简称《双信道模型》）中所指出的，当需要更新或优化通信双方的Prompt时，若直接用旧Prompt生成的内容传递新Prompt，极易暴露通信意图；若不传递，则双方无法同步，隐写通信将中断或效率低下。
