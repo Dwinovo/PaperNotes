@@ -11,14 +11,12 @@
             "id": "be9a342b2929f9d7",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/调研/agent_covert_communication_research.md",
-                "mode": "source",
-                "source": false
+                "file": "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/调研/Agent_隐蔽通信_内容与行为的分层协同与动态双信道模型.pdf"
               },
-              "icon": "lucide-file",
-              "title": "agent_covert_communication_research"
+              "icon": "lucide-file-text",
+              "title": "Agent_隐蔽通信_内容与行为的分层协同与动态双信道模型"
             }
           }
         ]
@@ -182,8 +180,8 @@
   },
   "active": "be9a342b2929f9d7",
   "lastOpenFiles": [
-    "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/调研/Agent_隐蔽通信_内容与行为的分层协同与动态双信道模型.pdf",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/调研/agent_covert_communication_research.md",
+    "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/调研/Agent_隐蔽通信_内容与行为的分层协同与动态双信道模型.pdf",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/调研/Prompt 压缩调研.md",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/调研/Agent 隐蔽通信 内容与⾏为的分 层协同与动态双信道模型——Promote信息压缩.md",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/调研/agent_covert_communication_research.html",
