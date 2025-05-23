@@ -48,9 +48,37 @@
               "icon": "lucide-file",
               "title": "IMRD结构解析"
             }
+          },
+          {
+            "id": "edd824a1239465f3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/AN EMPIRICAL STUDY ON PROMPT COMPRESSION  FOR LARGE LANGUAGE MODELS/sub/IMRD结构解析.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "IMRD结构解析"
+            }
+          },
+          {
+            "id": "7931e85e5469cb77",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/AN EMPIRICAL STUDY ON PROMPT COMPRESSION  FOR LARGE LANGUAGE MODELS/AN EMPIRICAL STUDY ON PROMPT COMPRESSION  FOR LARGE LANGUAGE MODELS.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "AN EMPIRICAL STUDY ON PROMPT COMPRESSION  FOR LARGE LANGUAGE MODELS"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -209,11 +237,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b4a3784e9657c5d6",
+  "active": "baba890fe79996fa",
   "lastOpenFiles": [
-    "GPT调教/论文阅读提示词.md",
-    "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/500xCompressorGeneralizedPromptCompressionforLargeLanguageModels/sub/IMRD结构解析.md",
+    "未命名",
+    "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/AN EMPIRICAL STUDY ON PROMPT COMPRESSION  FOR LARGE LANGUAGE MODELS/sub/IMRD结构解析.md",
+    "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/AN EMPIRICAL STUDY ON PROMPT COMPRESSION  FOR LARGE LANGUAGE MODELS/AN EMPIRICAL STUDY ON PROMPT COMPRESSION  FOR LARGE LANGUAGE MODELS.md",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/500xCompressorGeneralizedPromptCompressionforLargeLanguageModels/500xCompressor Generalized Prompt Compression for Large Language Models.md",
+    "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/500xCompressorGeneralizedPromptCompressionforLargeLanguageModels/sub/IMRD结构解析.md",
+    "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/AN EMPIRICAL STUDY ON PROMPT COMPRESSION  FOR LARGE LANGUAGE MODELS/sub",
+    "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/AN EMPIRICAL STUDY ON PROMPT COMPRESSION  FOR LARGE LANGUAGE MODELS",
+    "GPT调教/论文阅读提示词.md",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/500xCompressorGeneralizedPromptCompressionforLargeLanguageModels/sub",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/500xCompressorGeneralizedPromptCompressionforLargeLanguageModels",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文",
@@ -244,17 +277,12 @@
     "隐写检测/VAE-Stega Linguistic Steganography Based on Variational Auto-Encoder/Sub/IMRD结构解析.md",
     "GPT调教/通用增强提示词.md",
     "隐写检测/An information-theoretic model for steganography/An information-theoretic model for steganography.md",
-    "GPT调教",
-    "隐写检测/An information-theoretic model for steganography/An_information-theoretic_model_for_steganography_(2003_IH)(1).pdf",
     "隐写检测/An information-theoretic model for steganography/Sub/IMRD结构解析.md",
     "隐写检测/An information-theoretic model for steganography/Sub/安全的隐写系统.md",
     "隐写检测/An information-theoretic model for steganography/Sub/模型.md",
     "隐写检测/An information-theoretic model for steganography/Sub/结论.md",
     "隐写检测/An information-theoretic model for steganography/Sub/讨论.md",
     "隐写检测/An information-theoretic model for steganography/Sub/通用隐写系统.md",
-    "隐写检测/An information-theoretic model for steganography/Sub/检测性能.md",
-    "隐写检测/An information-theoretic model for steganography/Sub/引言.md",
-    "隐写检测/An information-theoretic model for steganography/Img/Pasted image 20250520185401.png",
-    "隐写检测/An information-theoretic model for steganography/Sub/摘要.md"
+    "隐写检测/An information-theoretic model for steganography/Img/Pasted image 20250520185401.png"
   ]
 }
