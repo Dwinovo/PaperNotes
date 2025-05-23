@@ -18,8 +18,23 @@
               "icon": "lucide-file-text",
               "title": "Agent_隐蔽通信_内容与行为的分层协同与动态双信道模型"
             }
+          },
+          {
+            "id": "21f0430efd6d2f6c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/调研/Prompt 压缩调研.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Prompt 压缩调研"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -178,10 +193,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4b89a2fcb06bcb5c",
+  "active": "baba890fe79996fa",
   "lastOpenFiles": [
-    "隐写检测/VAE-Stega Linguistic Steganography Based on Variational Auto-Encoder/VAE-Stega Linguistic Steganography Based on Variational Auto-Encoder.md",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/调研/Agent_隐蔽通信_内容与行为的分层协同与动态双信道模型.pdf",
+    "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/调研/Prompt 压缩调研.md",
+    "隐写检测/VAE-Stega Linguistic Steganography Based on Variational Auto-Encoder/VAE-Stega Linguistic Steganography Based on Variational Auto-Encoder.md",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/调研",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型",
     "隐写检测/VAE-Stega Linguistic Steganography Based on Variational Auto-Encoder/Img/Pasted image 20250521153306.png",
