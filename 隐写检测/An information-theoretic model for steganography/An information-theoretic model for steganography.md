@@ -8,6 +8,6 @@
 ## [[通用隐写系统]]
 ## [[讨论]]
 
-## [[结论]]
+## [[隐写检测/An information-theoretic model for steganography/Sub/结论]]
 ## 学长的总结
 ![[An_information-theoretic_model_for_steganography_(2003_IH)(1).pdf]]

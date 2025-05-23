@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "f48accd03d837b76",
+            "id": "4b89a2fcb06bcb5c",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -20,51 +20,8 @@
               "icon": "lucide-file",
               "title": "VAE-Stega Linguistic Steganography Based on Variational Auto-Encoder"
             }
-          },
-          {
-            "id": "26666105912211eb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "隐写检测/VAE-Stega Linguistic Steganography Based on Variational Auto-Encoder/Sub/PISC效应.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "PISC效应"
-            }
-          },
-          {
-            "id": "c52923fe610775db",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "隐写检测/VAE-Stega Linguistic Steganography Based on Variational Auto-Encoder/Sub/TS-VAE方法.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "TS-VAE方法"
-            }
-          },
-          {
-            "id": "8f82232cfdc7421c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "隐写检测/VAE-Stega Linguistic Steganography Based on Variational Auto-Encoder/Sub/实验与分析.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "实验与分析"
-            }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -209,8 +166,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 327.5,
-    "collapsed": true
+    "width": 327.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -223,14 +179,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8f82232cfdc7421c",
+  "active": "4b89a2fcb06bcb5c",
   "lastOpenFiles": [
-    "Pasted image 20250521153550.png",
-    "Pasted image 20250521153437.png",
-    "Pasted image 20250521153306.png",
+    "隐写检测/VAE-Stega Linguistic Steganography Based on Variational Auto-Encoder/Img/Pasted image 20250521153306.png",
+    "隐写检测/VAE-Stega Linguistic Steganography Based on Variational Auto-Encoder/Img/Pasted image 20250521153550.png",
+    "隐写检测/VAE-Stega Linguistic Steganography Based on Variational Auto-Encoder/Sub/结论.md",
+    "隐写检测/VAE-Stega Linguistic Steganography Based on Variational Auto-Encoder/Sub/实验与分析.md",
+    "隐写检测/VAE-Stega Linguistic Steganography Based on Variational Auto-Encoder/Img/Pasted image 20250521153437.png",
     "隐写检测/VAE-Stega Linguistic Steganography Based on Variational Auto-Encoder/VAE-Stega Linguistic Steganography Based on Variational Auto-Encoder.md",
     "隐写检测/VAE-Stega Linguistic Steganography Based on Variational Auto-Encoder/Sub/TS-VAE方法.md",
-    "隐写检测/VAE-Stega Linguistic Steganography Based on Variational Auto-Encoder/Sub/实验与分析.md",
     "隐写检测/VAE-Stega Linguistic Steganography Based on Variational Auto-Encoder/Img/Pasted image 20250521150744.png",
     "隐写检测/VAE-Stega Linguistic Steganography Based on Variational Auto-Encoder/Sub/PISC效应.md",
     "隐写检测/VAE-Stega Linguistic Steganography Based on Variational Auto-Encoder/Img/Pasted image 20250521144452.png",
