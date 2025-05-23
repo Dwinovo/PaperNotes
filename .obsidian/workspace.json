@@ -23,12 +23,14 @@
             "id": "21f0430efd6d2f6c",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/调研/Agent_隐蔽通信_内容与行为的分层协同与动态双信道模型.pdf"
+                "file": "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/调研/agent_covert_communication_research.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "Agent_隐蔽通信_内容与行为的分层协同与动态双信道模型"
+              "icon": "lucide-file",
+              "title": "agent_covert_communication_research"
             }
           }
         ],
@@ -194,7 +196,10 @@
   "active": "21f0430efd6d2f6c",
   "lastOpenFiles": [
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/调研/Prompt 压缩调研.md",
+    "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/调研/agent_covert_communication_research.md",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/调研/Agent_隐蔽通信_内容与行为的分层协同与动态双信道模型.pdf",
+    "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/调研/agent_covert_communication_research.html",
+    "agent_covert_communication_research.html",
     "隐写检测/VAE-Stega Linguistic Steganography Based on Variational Auto-Encoder/VAE-Stega Linguistic Steganography Based on Variational Auto-Encoder.md",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/调研",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型",
@@ -231,9 +236,7 @@
     "隐写检测/An information-theoretic model for steganography/Sub/检测性能.md",
     "隐写检测/An information-theoretic model for steganography/Sub/引言.md",
     "隐写检测/An information-theoretic model for steganography/Img/Pasted image 20250520185401.png",
-    "隐写检测/An information-theoretic model for steganography/Img",
     "隐写检测/An information-theoretic model for steganography/Sub/摘要.md",
-    "隐写检测/An information-theoretic model for steganography/Sub",
     "欢迎.md"
   ]
 }
