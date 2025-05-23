@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "GPT调教/论文阅读提示词.md",
+                "file": "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/500xCompressorGeneralizedPromptCompressionforLargeLanguageModels/sub/IMRD结构解析.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "论文阅读提示词"
+              "title": "IMRD结构解析"
             }
           }
         ],
@@ -211,6 +211,7 @@
   },
   "active": "b4a3784e9657c5d6",
   "lastOpenFiles": [
+    "GPT调教/论文阅读提示词.md",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/500xCompressorGeneralizedPromptCompressionforLargeLanguageModels/sub/IMRD结构解析.md",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/500xCompressorGeneralizedPromptCompressionforLargeLanguageModels/500xCompressor Generalized Prompt Compression for Large Language Models.md",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/500xCompressorGeneralizedPromptCompressionforLargeLanguageModels/sub",
@@ -243,7 +244,6 @@
     "隐写检测/VAE-Stega Linguistic Steganography Based on Variational Auto-Encoder/Sub/IMRD结构解析.md",
     "GPT调教/通用增强提示词.md",
     "隐写检测/An information-theoretic model for steganography/An information-theoretic model for steganography.md",
-    "GPT调教/论文阅读提示词.md",
     "GPT调教",
     "隐写检测/An information-theoretic model for steganography/An_information-theoretic_model_for_steganography_(2003_IH)(1).pdf",
     "隐写检测/An information-theoretic model for steganography/Sub/IMRD结构解析.md",
