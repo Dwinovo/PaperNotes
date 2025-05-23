@@ -1,5 +1,5 @@
 # Agent隐蔽通信中Prompt压缩与解压缩方法研究综述
-
+- from skywork
 *当前日期: 2025-05-23*
 
 ## 一、 引言：Agent隐蔽通信的挑战与Prompt的角色
