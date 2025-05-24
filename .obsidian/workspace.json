@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "隐写检测/VAE-Stega Linguistic Steganography Based on Variational Auto-Encoder/Sub/IMRD结构解析.md",
+                "file": "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/调研/Agent隐蔽通信中Prompt信息压缩研究综述.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "IMRD结构解析 的反向链接列表"
+              "title": "Agent隐蔽通信中Prompt信息压缩研究综述 的反向链接列表"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "隐写检测/An information-theoretic model for steganography/An information-theoretic model for steganography.md",
+                "file": "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/调研/Agent隐蔽通信中Prompt信息压缩研究综述.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "An information-theoretic model for steganography 的大纲"
+              "title": "Agent隐蔽通信中Prompt信息压缩研究综述 的大纲"
             }
           },
           {
@@ -161,12 +161,12 @@
               "title": "Source Control"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 327.5
+    "width": 327.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
