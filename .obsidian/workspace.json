@@ -161,11 +161,13 @@
               "title": "Source Control"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 327.5
+    "width": 327.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -181,9 +183,9 @@
   "active": "7690cadb1ca73650",
   "lastOpenFiles": [
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/500xCompressorGeneralizedPromptCompressionforLargeLanguageModels/500xCompressor Generalized Prompt Compression for Large Language Models.md",
+    "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/500xCompressorGeneralizedPromptCompressionforLargeLanguageModels/sub/IMRD结构解析.md",
     "GPT调教/论文阅读提示词.md",
     "GPT调教/通用增强提示词.md",
-    "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/500xCompressorGeneralizedPromptCompressionforLargeLanguageModels/sub/IMRD结构解析.md",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/PromptOptMeError-Aware Prompt Compression for LLMbased MT Evaluation Metrics/Sub/IMRD结构解析.md",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/ICPC IN-CONTEXT PROMPT COMPRESSION WITH FASTER  INFERENCE/Sub/IMRD结构解析.md",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/Dynamic Compressing Prompts for Efficient  Inference of Large Language Models/Dynamic Compressing Prompts for Efficient  Inference of Large Language Models.md",
