@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/ICPC IN-CONTEXT PROMPT COMPRESSION WITH FASTER  INFERENCE/ICPC IN-CONTEXT PROMPT COMPRESSION WITH FASTER  INFERENCE.md",
+                "file": "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/ICPC IN-CONTEXT PROMPT COMPRESSION WITH FASTER  INFERENCE/Sub/IMRD结构解析.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ICPC IN-CONTEXT PROMPT COMPRESSION WITH FASTER  INFERENCE"
+              "title": "IMRD结构解析"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/ICPC IN-CONTEXT PROMPT COMPRESSION WITH FASTER  INFERENCE/ICPC IN-CONTEXT PROMPT COMPRESSION WITH FASTER  INFERENCE.md",
+                "file": "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/ICPC IN-CONTEXT PROMPT COMPRESSION WITH FASTER  INFERENCE/Sub/IMRD结构解析.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "ICPC IN-CONTEXT PROMPT COMPRESSION WITH FASTER  INFERENCE 的反向链接列表"
+              "title": "IMRD结构解析 的反向链接列表"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/ICPC IN-CONTEXT PROMPT COMPRESSION WITH FASTER  INFERENCE/ICPC IN-CONTEXT PROMPT COMPRESSION WITH FASTER  INFERENCE.md",
+                "file": "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/ICPC IN-CONTEXT PROMPT COMPRESSION WITH FASTER  INFERENCE/Sub/IMRD结构解析.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "ICPC IN-CONTEXT PROMPT COMPRESSION WITH FASTER  INFERENCE 的大纲"
+              "title": "IMRD结构解析 的大纲"
             }
           },
           {
@@ -182,6 +182,7 @@
   },
   "active": "7690cadb1ca73650",
   "lastOpenFiles": [
+    "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/ICPC IN-CONTEXT PROMPT COMPRESSION WITH FASTER  INFERENCE/ICPC IN-CONTEXT PROMPT COMPRESSION WITH FASTER  INFERENCE.md",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/Dynamic Compressing Prompts for Efficient  Inference of Large Language Models/Dynamic Compressing Prompts for Efficient  Inference of Large Language Models.md",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/Dynamic Compressing Prompts for Efficient  Inference of Large Language Models/Sub/IMRD结构解析.md",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/Covert Prompt Transmission for Secure Large  Language Model Services/Covert Prompt Transmission for Secure Large  Language Model Services.md",
@@ -202,7 +203,6 @@
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/ICPC IN-CONTEXT PROMPT COMPRESSION WITH FASTER  INFERENCE/Sub/IMRD结构解析.md",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/PromptOptMeError-Aware Prompt Compression for LLMbased MT Evaluation Metrics/Sub",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/PromptOptMeError-Aware Prompt Compression for LLMbased MT Evaluation Metrics",
-    "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/ICPC IN-CONTEXT PROMPT COMPRESSION WITH FASTER  INFERENCE/ICPC IN-CONTEXT PROMPT COMPRESSION WITH FASTER  INFERENCE.md",
     "ICPC IN-CONTEXT PROMPT COMPRESSION WITH FASTER  INFERENCE",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/ICPC IN-CONTEXT PROMPT COMPRESSION WITH FASTER  INFERENCE/Sub",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/ICPC IN-CONTEXT PROMPT COMPRESSION WITH FASTER  INFERENCE",
