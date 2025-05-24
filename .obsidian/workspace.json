@@ -4,135 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "d27252ea9825118b",
+        "id": "60c12f09774b5e0a",
         "type": "tabs",
         "children": [
           {
-            "id": "fe46715d04be02ce",
+            "id": "7690cadb1ca73650",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "GPT调教/论文阅读提示词.md",
+                "file": "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/调研/Agent隐蔽通信中Prompt信息压缩研究综述.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "论文阅读提示词"
-            }
-          },
-          {
-            "id": "c6de0040b8ad05ff",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/Covert Prompt Transmission for Secure Large  Language Model Services/Covert Prompt Transmission for Secure Large  Language Model Services.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Covert Prompt Transmission for Secure Large  Language Model Services"
-            }
-          },
-          {
-            "id": "22f98b1768c969d4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/Covert Prompt Transmission for Secure Large  Language Model Services/Covert Prompt Transmission for Secure Large  Language Model Services.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Covert Prompt Transmission for Secure Large  Language Model Services"
-            }
-          },
-          {
-            "id": "09e0d5a7b1728e96",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/Dynamic Compressing Prompts for Efficient  Inference of Large Language Models/Dynamic Compressing Prompts for Efficient  Inference of Large Language Models.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Dynamic Compressing Prompts for Efficient  Inference of Large Language Models"
-            }
-          },
-          {
-            "id": "c26cf453d3ac3f5a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/Dynamic Compressing Prompts for Efficient  Inference of Large Language Models/Sub/IMRD结构解析.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "IMRD结构解析"
-            }
-          },
-          {
-            "id": "ee930db49ea18fab",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/ICPC IN-CONTEXT PROMPT COMPRESSION WITH FASTER  INFERENCE/ICPC IN-CONTEXT PROMPT COMPRESSION WITH FASTER  INFERENCE.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "ICPC IN-CONTEXT PROMPT COMPRESSION WITH FASTER  INFERENCE"
-            }
-          },
-          {
-            "id": "d7b554109babae1d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/ICPC IN-CONTEXT PROMPT COMPRESSION WITH FASTER  INFERENCE/Sub/IMRD结构解析.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "IMRD结构解析"
-            }
-          },
-          {
-            "id": "659125bc84c332b1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/PromptOptMeError-Aware Prompt Compression for LLMbased MT Evaluation Metrics/PromptOptMeError-Aware Prompt Compression for LLMbased MT Evaluation Metrics.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "PromptOptMeError-Aware Prompt Compression for LLMbased MT Evaluation Metrics"
-            }
-          },
-          {
-            "id": "ccb0750349f72ae2",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/调研/Prompt 压缩调研.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "Prompt 压缩调研"
+              "title": "Agent隐蔽通信中Prompt信息压缩研究综述"
             }
           }
-        ],
-        "currentTab": 8
+        ]
       }
     ],
     "direction": "vertical"
@@ -290,10 +179,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ccb0750349f72ae2",
+  "active": "7690cadb1ca73650",
   "lastOpenFiles": [
-    "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/调研/Agent隐蔽通信中Prompt信息压缩研究综述.md",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/调研/Prompt 压缩调研.pdf",
+    "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/调研/Agent隐蔽通信中Prompt信息压缩研究综述.md",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/调研/Agent_隐蔽通信_内容与行为的分层协同与动态双信道模型.pdf",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/CompressThen PromptImproving AccuracyEfficiency  Tradeoff of LLM Inference with Transferable Prompt/sub/IMRD结构解析.md",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/CompressThen PromptImproving AccuracyEfficiency  Tradeoff of LLM Inference with Transferable Prompt/CompressThen PromptImproving AccuracyEfficiency  Tradeoff of LLM Inference with Transferable Prompt.md",
