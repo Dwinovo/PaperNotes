@@ -1,6 +1,3 @@
-好的，我们来分析这篇名为 "PromptOptMe: Error-Aware Prompt Compression for LLM-based MT Evaluation Metrics" 的论文。
-
-**首先是一个综合的概览：**
 
 1.  **元信息**
     * **论文标题**：PromptOptMe: Error-Aware Prompt Compression for LLM-based MT Evaluation Metrics [cite: 1]
