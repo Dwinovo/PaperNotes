@@ -125,12 +125,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/CompressThen PromptImproving AccuracyEfficiency  Tradeoff of LLM Inference with Transferable Prompt/CompressThen PromptImproving AccuracyEfficiency  Tradeoff of LLM Inference with Transferable Prompt.md",
+                "file": "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/CompressThen PromptImproving AccuracyEfficiency  Tradeoff of LLM Inference with Transferable Prompt/sub/IMRD结构解析.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CompressThen PromptImproving AccuracyEfficiency  Tradeoff of LLM Inference with Transferable Prompt"
+              "title": "IMRD结构解析"
             }
           }
         ],
@@ -292,8 +292,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "baba890fe79996fa",
+  "active": "ccb0750349f72ae2",
   "lastOpenFiles": [
+    "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/CompressThen PromptImproving AccuracyEfficiency  Tradeoff of LLM Inference with Transferable Prompt/CompressThen PromptImproving AccuracyEfficiency  Tradeoff of LLM Inference with Transferable Prompt.md",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/PromptOptMeError-Aware Prompt Compression for LLMbased MT Evaluation Metrics/Sub/IMRD结构解析.md",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/PromptOptMeError-Aware Prompt Compression for LLMbased MT Evaluation Metrics/PromptOptMeError-Aware Prompt Compression for LLMbased MT Evaluation Metrics.md",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/PromptOptMeError-Aware Prompt Compression for LLMbased MT Evaluation Metrics/Sub",
@@ -313,7 +314,6 @@
     "GPT调教/论文阅读提示词.md",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/Covert Prompt Transmission for Secure Large  Language Model Services/Sub",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/Covert Prompt Transmission for Secure Large  Language Model Services",
-    "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/CompressThen PromptImproving AccuracyEfficiency  Tradeoff of LLM Inference with Transferable Prompt/CompressThen PromptImproving AccuracyEfficiency  Tradeoff of LLM Inference with Transferable Prompt.md",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/CompressThen PromptImproving AccuracyEfficiency  Tradeoff of LLM Inference with Transferable Prompt/sub/IMRD结构解析.md",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/调研/Agent隐蔽通信中Prompt信息压缩研究综述.md",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/500xCompressorGeneralizedPromptCompressionforLargeLanguageModels/500xCompressor Generalized Prompt Compression for Large Language Models.md",
