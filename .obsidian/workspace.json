@@ -11,12 +11,14 @@
             "id": "63454cdb7ba1154a",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/调研/Agent_隐蔽通信_内容与行为的分层协同与动态双信道模型.pdf"
+                "file": "GPT调教/论文阅读提示词.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "Agent_隐蔽通信_内容与行为的分层协同与动态双信道模型"
+              "icon": "lucide-file",
+              "title": "论文阅读提示词"
             }
           },
           {
@@ -47,8 +49,7 @@
               "title": "IMRD结构解析"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -207,18 +208,18 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "28f9e2193949bdc5",
+  "active": "63454cdb7ba1154a",
   "lastOpenFiles": [
-    "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/Dynamic Compressing Prompts for Efficient  Inference of Large Language Models/Dynamic Compressing Prompts for Efficient  Inference of Large Language Models.md",
-    "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/Dynamic Compressing Prompts for Efficient  Inference of Large Language Models/Sub/IMRD结构解析.md",
-    "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/调研/Agent隐蔽通信中Prompt信息压缩研究综述.md",
-    "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/500xCompressorGeneralizedPromptCompressionforLargeLanguageModels/500xCompressor Generalized Prompt Compression for Large Language Models.md",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/500xCompressorGeneralizedPromptCompressionforLargeLanguageModels/sub/IMRD结构解析.md",
+    "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/500xCompressorGeneralizedPromptCompressionforLargeLanguageModels/500xCompressor Generalized Prompt Compression for Large Language Models.md",
+    "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/调研/Agent_隐蔽通信_内容与行为的分层协同与动态双信道模型.pdf",
+    "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/Dynamic Compressing Prompts for Efficient  Inference of Large Language Models/Sub/IMRD结构解析.md",
+    "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/Dynamic Compressing Prompts for Efficient  Inference of Large Language Models/Dynamic Compressing Prompts for Efficient  Inference of Large Language Models.md",
+    "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/调研/Agent隐蔽通信中Prompt信息压缩研究综述.md",
     "GPT调教/通用增强提示词.md",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/Leveraging Attention to Effectively Compress Prompts for Long-Context LLMs/Sub/IMRD结构解析.md",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/Leveraging Attention to Effectively Compress Prompts for Long-Context LLMs/Leveraging Attention to Effectively Compress Prompts for Long-Context LLMs.md",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/Leveraging Attention to Effectively Compress Prompts for Long-Context LLMs/Sub",
-    "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/调研/Agent_隐蔽通信_内容与行为的分层协同与动态双信道模型.pdf",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/Leveraging Attention to Effectively Compress Prompts for Long-Context LLMs",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/PIS Linking Importance Sampling and Attention Mechanisms for Efficient Prompt Compression/sub/IMRD结构解析.md",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/ICPC IN-CONTEXT PROMPT COMPRESSION WITH FASTER  INFERENCE/Sub/IMRD结构解析.md",
@@ -246,7 +247,6 @@
     "隐写检测/VAE-Stega Linguistic Steganography Based on Variational Auto-Encoder/Img/Pasted image 20250521153306.png",
     "隐写检测/VAE-Stega Linguistic Steganography Based on Variational Auto-Encoder/Img/Pasted image 20250521153550.png",
     "隐写检测/VAE-Stega Linguistic Steganography Based on Variational Auto-Encoder/Sub/结论.md",
-    "隐写检测/VAE-Stega Linguistic Steganography Based on Variational Auto-Encoder/Sub/实验与分析.md",
     "隐写检测/VAE-Stega Linguistic Steganography Based on Variational Auto-Encoder/Img/Pasted image 20250521153437.png",
     "隐写检测/VAE-Stega Linguistic Steganography Based on Variational Auto-Encoder/Img/Pasted image 20250521150744.png",
     "隐写检测/VAE-Stega Linguistic Steganography Based on Variational Auto-Encoder/Img/Pasted image 20250521144452.png",
