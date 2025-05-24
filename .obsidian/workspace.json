@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/调研/Agent隐蔽通信中Prompt信息压缩研究综述.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
@@ -166,8 +166,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 327.5,
-    "collapsed": true
+    "width": 327.5
   },
   "left-ribbon": {
     "hiddenItems": {
