@@ -4,39 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "60c12f09774b5e0a",
+        "id": "e5f536f1da1201d6",
         "type": "tabs",
         "children": [
           {
-            "id": "7690cadb1ca73650",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/ICPC IN-CONTEXT PROMPT COMPRESSION WITH FASTER  INFERENCE/Sub/IMRD结构解析.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "IMRD结构解析"
-            }
-          },
-          {
-            "id": "604a1d4f7cf65056",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/PIS Linking Importance Sampling and Attention Mechanisms for Efficient Prompt Compression/PIS Linking Importance Sampling and Attention Mechanisms for Efficient Prompt Compression.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "PIS Linking Importance Sampling and Attention Mechanisms for Efficient Prompt Compression"
-            }
-          },
-          {
-            "id": "4926d42af49707f7",
+            "id": "63454cdb7ba1154a",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -49,8 +21,7 @@
               "title": "IMRD结构解析"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -209,12 +180,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4926d42af49707f7",
+  "active": "63454cdb7ba1154a",
   "lastOpenFiles": [
+    "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/ICPC IN-CONTEXT PROMPT COMPRESSION WITH FASTER  INFERENCE/Sub/IMRD结构解析.md",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/PIS Linking Importance Sampling and Attention Mechanisms for Efficient Prompt Compression/PIS Linking Importance Sampling and Attention Mechanisms for Efficient Prompt Compression.md",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/PIS Linking Importance Sampling and Attention Mechanisms for Efficient Prompt Compression/sub/IMRD结构解析.md",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/PIS Linking Importance Sampling and Attention Mechanisms for Efficient Prompt Compression/sub",
-    "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/ICPC IN-CONTEXT PROMPT COMPRESSION WITH FASTER  INFERENCE/Sub/IMRD结构解析.md",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/PIS Linking Importance Sampling and Attention Mechanisms for Efficient Prompt Compression",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/ICPC IN-CONTEXT PROMPT COMPRESSION WITH FASTER  INFERENCE/ICPC IN-CONTEXT PROMPT COMPRESSION WITH FASTER  INFERENCE.md",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/Dynamic Compressing Prompts for Efficient  Inference of Large Language Models/Dynamic Compressing Prompts for Efficient  Inference of Large Language Models.md",
