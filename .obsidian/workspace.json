@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "9664ec76c220af14",
+        "id": "89294c494d735b61",
         "type": "tabs",
         "children": [
           {
-            "id": "7be990d6508e78d8",
+            "id": "0d743a42953bb8d6",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "GPT调教/通用增强提示词.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "通用增强提示词"
+              "title": "新标签页"
             }
           }
         ]
@@ -180,14 +176,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7be990d6508e78d8",
+  "active": "0d743a42953bb8d6",
   "lastOpenFiles": [
+    "GPT调教/通用增强提示词.md",
     "GPT调教/论文阅读提示词.md",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/PromptOptMeError-Aware Prompt Compression for LLMbased MT Evaluation Metrics/PromptOptMeError-Aware Prompt Compression for LLMbased MT Evaluation Metrics.md",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/PIS Linking Importance Sampling and Attention Mechanisms for Efficient Prompt Compression/sub/IMRD结构解析.md",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/PIS Linking Importance Sampling and Attention Mechanisms for Efficient Prompt Compression/PIS Linking Importance Sampling and Attention Mechanisms for Efficient Prompt Compression.md",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/调研/Agent隐蔽通信中Prompt信息压缩研究综述.md",
-    "GPT调教/通用增强提示词.md",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/PromptOptMeError-Aware Prompt Compression for LLMbased MT Evaluation Metrics/Sub/IMRD结构解析.md",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/CompressThen PromptImproving AccuracyEfficiency  Tradeoff of LLM Inference with Transferable Prompt/CompressThen PromptImproving AccuracyEfficiency  Tradeoff of LLM Inference with Transferable Prompt.md",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/CompressThen PromptImproving AccuracyEfficiency  Tradeoff of LLM Inference with Transferable Prompt/sub/IMRD结构解析.md",
