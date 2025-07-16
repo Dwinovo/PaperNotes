@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "89294c494d735b61",
+        "id": "ad6c3c7c1940425d",
         "type": "tabs",
         "children": [
           {
-            "id": "0d743a42953bb8d6",
+            "id": "e5dbda08285b5946",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/AFrameworkforDesigningProvablySecureSteganography/A Framework for Designing Provably Secure Steganography.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "A Framework for Designing Provably Secure Steganography"
             }
           }
         ]
@@ -176,8 +180,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0d743a42953bb8d6",
+  "active": "baba890fe79996fa",
   "lastOpenFiles": [
+    "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/AFrameworkforDesigningProvablySecureSteganography/A Framework for Designing Provably Secure Steganography.md",
+    "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/AFrameworkforDesigningProvablySecureSteganography",
+    "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/调研/Agent_隐蔽通信_内容与行为的分层协同与动态双信道模型.pdf",
     "GPT调教/通用增强提示词.md",
     "GPT调教/论文阅读提示词.md",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/PromptOptMeError-Aware Prompt Compression for LLMbased MT Evaluation Metrics/PromptOptMeError-Aware Prompt Compression for LLMbased MT Evaluation Metrics.md",
@@ -197,7 +204,6 @@
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/Dynamic Compressing Prompts for Efficient  Inference of Large Language Models/Dynamic Compressing Prompts for Efficient  Inference of Large Language Models.md",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/Covert Prompt Transmission for Secure Large  Language Model Services/Sub/IMRD结构解析.md",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/Covert Prompt Transmission for Secure Large  Language Model Services/Covert Prompt Transmission for Secure Large  Language Model Services.md",
-    "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/调研/Agent_隐蔽通信_内容与行为的分层协同与动态双信道模型.pdf",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/调研/Prompt 压缩调研.pdf",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/Leveraging Attention to Effectively Compress Prompts for Long-Context LLMs/Sub",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/Leveraging Attention to Effectively Compress Prompts for Long-Context LLMs",
@@ -208,7 +214,6 @@
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/PromptOptMeError-Aware Prompt Compression for LLMbased MT Evaluation Metrics/Sub",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/PromptOptMeError-Aware Prompt Compression for LLMbased MT Evaluation Metrics",
     "ICPC IN-CONTEXT PROMPT COMPRESSION WITH FASTER  INFERENCE",
-    "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/论文/ICPC IN-CONTEXT PROMPT COMPRESSION WITH FASTER  INFERENCE/Sub",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/调研/Prompt 压缩调研.md",
     "Agent隐蔽通信内容与行为的分层协同与动态双信道模型/调研/Agent 隐蔽通信 内容与⾏为的分 层协同与动态双信道模型——Promote信息压缩.md",
     "隐写检测/VAE-Stega Linguistic Steganography Based on Variational Auto-Encoder/VAE-Stega Linguistic Steganography Based on Variational Auto-Encoder.md",
